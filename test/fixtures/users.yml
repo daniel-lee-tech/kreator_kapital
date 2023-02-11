@@ -1,0 +1,9 @@
+<% require 'bcrypt' %>
+
+one:
+  password_digest: <%= BCrypt::Password.create('testpassword', cost: 5) %>
+  name: dan
+
+two:
+  password_digest: <%= BCrypt::Password.create('testpassword', cost: 5) %>
+  name: stan
